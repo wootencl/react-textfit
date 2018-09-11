@@ -10,16 +10,31 @@
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
     "react/react-in-jsx-scope": 2,
-    "indent": [2, 4, {"SwitchCase": 1}],
+    "indent": [2, 4, {
+      "SwitchCase": 1,
+      "ignoredNodes": ['JSXElement', 'JSXElement > *', 'JSXAttribute', 'JSXIdentifier', 'JSXNamespacedName', 'JSXMemberExpression', 'JSXSpreadAttribute', 'JSXExpressionContainer', 'JSXOpeningElement', 'JSXClosingElement', 'JSXText', 'JSXEmptyExpression', 'JSXSpreadChild']
+    }],
+    "react/jsx-indent": [2, 4],
+    "react/jsx-indent-props": [2, 4],
     "comma-dangle": 0,
     "react/jsx-boolean-value": 0,
     "react/no-multi-comp": 0,
     "react/prop-types": 0,
     "id-length": 0,
     "no-console": 0,
-    "no-nested-ternary": 0
+    "no-nested-ternary": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-closing-bracket-location": [0],
+    "react/jsx-one-expression-per-line": [0],
+    "max-len": ["error", { "code": 120 }],
+    "jsx-a11y/label-has-associated-control": [0],
+    "jsx-a11y/label-has-for": [0],
+    "implicit-arrow-linebreak": [0],
+    "no-multi-str": [0]
   },
   "plugins": [
-    "react"
+    "react",
+    "jsx-a11y",
+    "import"
   ]
 }

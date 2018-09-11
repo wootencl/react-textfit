@@ -22,9 +22,9 @@ export default function throttle(func, wait) {
         args = null;
     }
 
-    return function throttled() {
+    return function throttled(...rest) {
         ctx = this;
-        args = arguments;
+        args = rest;
         const delta = new Date() - last;
         if (!timeoutID) {
             if (delta >= wait) call();
